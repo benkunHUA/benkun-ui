@@ -1,0 +1,50 @@
+.bk-alert {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0,0,0,.65);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  font-feature-settings: 'tnum';
+  position: relative;
+  padding: 8px 15px 8px 37px;
+  word-wrap: break-word;
+  border-radius: 2px;
+  @include alert-type(#e6f7ff, #91d5ff);
+  &.bk-alert-success {
+    @include alert-type(#f6ffed, #b7eb8f);
+  }
+  &.bk-alert-danger {
+    @include alert-type(#fff2f0, #ffccc7);
+  }
+  &.bk-alert-warning {
+    @include alert-type(#fffbe6, #ffe58f);
+  }
+  .bk-alert-title {
+    display: block;
+    margin-bottom: 4px;
+    color: rgba(0,0,0,.85);
+    font-size: 16px;
+  }
+  .bk-alert-message {
+    display: block;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .bk-alert-close {
+    position: absolute;
+    top: 12.0005px;
+    right: 16px;
+    padding: 0;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 12px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+}

@@ -1,0 +1,4 @@
+@mixin alert-type($bg-color, $border-color) {
+  background-color: $bg-color;
+  border: 1px solid $border-color;
+}
