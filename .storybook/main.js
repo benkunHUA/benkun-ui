@@ -4,6 +4,7 @@ module.exports = {
     '@storybook/preset-create-react-app',
     '@storybook/addon-actions',
     '@storybook/addon-links',
+    '../src/styles/index.scss'
   ],
   webpackFinal: async config => {
     config.module.rules.push({

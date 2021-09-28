@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Alert from './components/Alert/alert';
+import Button from './components/Button/button';
 
 function App() {
   const [visible, setVisible] = useState(true);
@@ -15,7 +16,7 @@ function App() {
           onCancle={() => setVisible(!visible)}
         />
       }
-      
+      <Button btnType="primary"> button </Button>
     </div>
   );
 }
